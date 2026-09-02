@@ -102,7 +102,7 @@ inverse function to write. Modular addition, by contrast, needs `+k` one way and
 
 ## Recovering the key if it weren't given
 
-Not needed here, but this is the actual lesson. Apply the same cancellation to
+Not needed here, but this is the actual lesson. Applying same cancellation to
 the ciphertext relation:
 
 ```
@@ -174,7 +174,7 @@ C1 ^ C2 = (p1 ^ k) ^ (p2 ^ k) = p1 ^ p2
 
 The key cancels completely. XOR two ciphertexts encrypted under the same
 keystream and you get the XOR of the plaintexts, with zero knowledge of the key
-and regardless of its length. This is the many-time-pad attack — the reason
+and regardless of its length. This is the **many-time-pad attack** — the reason
 keystream reuse breaks stream ciphers (WEP IV collisions, CTR-mode nonce reuse,
 Venona).
 
